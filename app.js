@@ -17,6 +17,18 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/about', (req, res) => {
+  res.render('about');
+});
+
+app.get('/photo', (req, res) => {
+  res.render('photo');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact');
+});
+
 app.listen(port, () => {
   console.log(`Sunucu ${port} portunda başlatıldı`);
 });
